@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Life Regression (PLR) - Holistic Healing Center</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="../index.html" style="color: #8b5cf6; text-decoration: none;">Holistic Healing</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero -->
+    <section class="service-hero plr-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Past Life Regression (PLR)</h1>
+                <p>Explore your past lives through guided regression therapy to understand current life patterns and heal past traumas</p>
+                <div class="service-hero-buttons">
+                    <button class="btn btn-primary" onclick="openBookingModal()">Book a Session</button>
+                    <button class="btn btn-secondary" onclick="toggleChat()">Chat Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="service-details">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-intro">
+                    <h2>What is Past Life Regression?</h2>
+                    <p>Past Life Regression (PLR) is a therapeutic technique that uses guided hypnosis to access memories from previous lifetimes. This powerful healing modality helps you understand the root causes of current life challenges, phobias, relationship patterns, and unexplained emotions by exploring their origins in past lives.</p>
+                    
+                    <p>Through gentle guidance and deep relaxation, you'll be able to access these memories safely and explore how past life experiences may be influencing your present circumstances. This understanding can lead to profound healing, resolution of long-standing issues, and greater peace in your current life.</p>
+                </div>
+
+                <div class="service-benefits">
+                    <h2>Benefits of Past Life Regression</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <i class="fas fa-heart"></i>
+                            <h3>Emotional Healing</h3>
+                            <p>Release deep-seated emotional wounds and traumas from past life experiences</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-eye"></i>
+                            <h3>Pattern Recognition</h3>
+                            <p>Identify and understand recurring patterns in relationships and life circumstances</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Phobia Resolution</h3>
+                            <p>Discover and resolve unexplained fears and phobias from past life experiences</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-compass"></i>
+                            <h3>Life Purpose Clarity</h3>
+                            <p>Gain insights into your soul's journey and current life purpose</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-types">
+                    <h2>Our PLR Services</h2>
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <h3>Individual PLR Sessions</h3>
+                            <p>Personalized past life regression sessions tailored to your specific concerns and questions. Each session is conducted in a safe, supportive environment with gentle guidance.</p>
+                            <ul>
+                                <li>90-minute comprehensive session</li>
+                                <li>120-minute deep exploration session</li>
+                                <li>Follow-up integration sessions</li>
+                            </ul>
+                        </div>
+                        <div class="type-card">
+                            <h3>Relationship PLR</h3>
+                            <p>Explore past life connections with current relationships to understand karmic bonds, resolve conflicts, and deepen spiritual connections.</p>
+                            <ul>
+                                <li>Couple's past life exploration</li>
+                                <li>Family karmic relationship healing</li>
+                                <li>Soul mate and twin flame work</li>
+                            </ul>
+                        </div>
+                        <div class="type-card">
+                            <h3>Healing Focused PLR</h3>
+                            <p>Targeted sessions for specific issues such as phobias, chronic pain, emotional blocks, or spiritual development.</p>
+                            <ul>
+                                <li>Phobia and fear resolution</li>
+                                <li>Physical pain and illness healing</li>
+                                <li>Spiritual growth and development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hypnoheal Subsection -->
+                <div class="service-subsection">
+                    <h2>Hypnoheal & Subconscious Reprogramming</h2>
+                    <p>As part of our comprehensive PLR services, we also offer advanced hypnosis techniques for subconscious mind reprogramming. This powerful approach works directly with your subconscious mind to identify and transform limiting beliefs, negative patterns, and self-sabotaging behaviors.</p>
+                    
+                    <div class="subsection-benefits">
+                        <h3>Benefits of Hypnoheal</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <i class="fas fa-brain"></i>
+                                <h4>Belief Transformation</h4>
+                                <p>Replace limiting beliefs with empowering ones that support your goals</p>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-magic"></i>
+                                <h4>Behavioral Change</h4>
+                                <p>Overcome unwanted habits through subconscious reprogramming</p>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-heart"></i>
+                                <h4>Emotional Healing</h4>
+                                <p>Release deep emotional wounds stored in the subconscious</p>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-rocket"></i>
+                                <h4>Performance Enhancement</h4>
+                                <p>Improve confidence and performance in all areas of life</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subsection-services">
+                        <h3>Hypnoheal Services</h3>
+                        <div class="types-grid">
+                            <div class="type-card">
+                                <h4>Core Belief Reprogramming</h4>
+                                <p>Identify and transform the fundamental beliefs that shape your reality. We work with your core beliefs about yourself, others, and the world to create lasting positive change.</p>
+                                <ul>
+                                    <li>Self-worth and confidence building</li>
+                                    <li>Abundance and prosperity mindset</li>
+                                    <li>Relationship and love beliefs</li>
+                                    <li>Success and achievement programming</li>
+                                </ul>
+                            </div>
+                            <div class="type-card">
+                                <h4>Habit & Behavior Change</h4>
+                                <p>Overcome unwanted habits and behaviors by reprogramming the subconscious patterns that drive them. Create new, healthy behaviors that align with your goals.</p>
+                                <ul>
+                                    <li>Addiction and dependency release</li>
+                                    <li>Weight loss and healthy eating</li>
+                                    <li>Procrastination and motivation</li>
+                                    <li>Stress and anxiety management</li>
+                                </ul>
+                            </div>
+                            <div class="type-card">
+                                <h4>Performance Optimization</h4>
+                                <p>Enhance your performance in any area of life by optimizing your subconscious programming for success, confidence, and peak performance.</p>
+                                <ul>
+                                    <li>Career and business success</li>
+                                    <li>Athletic and physical performance</li>
+                                    <li>Creative and artistic expression</li>
+                                    <li>Public speaking and communication</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-process">
+                    <h2>What to Expect</h2>
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Pre-Session Consultation</h3>
+                            <p>We discuss your current concerns and what you hope to discover through past life regression or hypnoheal.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Relaxation & Induction</h3>
+                            <p>Gentle hypnosis induction to help you enter a deep state of relaxation and receptivity.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Exploration & Healing</h3>
+                            <p>Guided exploration of past lives or subconscious patterns, followed by healing and reprogramming.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>Integration & Follow-up</h3>
+                            <p>Processing the experience and integrating insights to create positive change in your current life.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-faq">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <h3>Is past life regression real or just imagination?</h3>
+                            <p>Whether past life memories are literal past lives or symbolic representations of the unconscious mind, the healing benefits are very real. The therapeutic value comes from the insights gained and the emotional release experienced during the session.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Will I be unconscious during hypnoheal?</h3>
+                            <p>No, you remain fully conscious and aware throughout the session. Hypnoheal is a state of deep relaxation where you're more receptive to positive suggestions, but you're always in control and can respond if needed.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>How many sessions will I need?</h3>
+                            <p>Some people find resolution in a single session, while others benefit from multiple sessions to explore different aspects or work through complex issues. We'll discuss your needs during the initial consultation.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Are these sessions safe?</h3>
+                            <p>Yes, when conducted by a trained professional. I use gentle, safe techniques and create a supportive environment. You remain in control throughout the session and can stop at any time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="service-cta">
+        <div class="container">
+            <h2>Ready to Explore Your Past Lives & Transform Your Mind?</h2>
+            <p>Discover the healing power of past life regression and subconscious reprogramming to unlock the wisdom of your soul's journey.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="openBookingModal()">Book a Session</button>
+                <button class="btn btn-secondary" onclick="toggleChat()">Chat Now</button>
+                <a href="../index.html#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Holistic Healing Center</h3>
+                    <p>Transforming lives through comprehensive healing and spiritual guidance.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html#home">Home</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="../index.html#testimonials">Testimonials</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="tarot.html">Tarot Reading</a></li>
+                        <li><a href="counselling.html">Counselling</a></li>
+                        <li><a href="plr.html">Past Life Regression</a></li>
+                        <li><a href="reiki.html">Reiki Healing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Holistic Healing Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header" onclick="toggleChat()">
+            <i class="fas fa-comments"></i>
+            <span>Chat with us</span>
+            <i class="fas fa-chevron-down" id="chatToggle"></i>
+        </div>
+        <div class="chat-popup" id="chatPopup">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <p>Hello! How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="booking-modal" id="bookingModal">
+        <div class="booking-modal-content">
+            <div class="booking-modal-header">
+                <h2>Book Your Session</h2>
+                <span class="close-modal" onclick="closeBookingModal()">&times;</span>
+            </div>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age *</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email ID *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile No. *</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Preferred Service</label>
+                    <select id="service" name="service">
+                        <option value="">Select a service</option>
+                        <option value="Tarot Reading">Tarot Reading</option>
+                        <option value="Counselling">Counselling</option>
+                        <option value="Past Life Regression">Past Life Regression</option>
+                        <option value="Reiki Healing">Reiki Healing</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="problem">A Brief About Problem</label>
+                    <textarea id="problem" name="problem" rows="4" placeholder="Please describe your concern or what you'd like to work on..."></textarea>
+                </div>
+                <div class="booking-form-buttons">
+                    <button type="button" class="btn btn-outline" onclick="closeBookingModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Thank You Modal -->
+    <div class="thank-you-modal" id="thankYouModal">
+        <div class="thank-you-content">
+            <div class="thank-you-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Thank You!</h3>
+            <p>Your appointment request has been submitted successfully. We'll contact you within 24 hours to confirm your appointment.</p>
+            <button class="btn btn-primary" onclick="closeThankYouModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html> 

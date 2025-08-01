@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holistic Healing Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Holistic Healing</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Books Side Runner -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transform Your Life Through Holistic Healing</h1>
+                <p class="hero-description">
+                    Discover inner peace and spiritual growth with our comprehensive healing services. 
+                    From tarot readings to energy healing, we guide you on your journey to wellness.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="openBookingModal()">Book Appointment</button>
+                    <button class="btn btn-secondary" onclick="toggleChat()">Start Chat</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-placeholder">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Books Side Runner -->
+        <div class="books-side-runner">
+            <h3>Books by Pratima Tiwari</h3>
+            <div class="books-scroll">
+                <div class="book-item">
+                    <div class="book-cover">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4>Journey to Inner Peace</h4>
+                    <p>Spiritual healing guide</p>
+                </div>
+                <div class="book-item">
+                    <div class="book-cover">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4>Tarot Wisdom Unveiled</h4>
+                    <p>Master tarot reading</p>
+                </div>
+                <div class="book-item">
+                    <div class="book-cover">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4>Past Lives, Present Healing</h4>
+                    <p>PLR healing power</p>
+                </div>
+                <div class="book-item">
+                    <div class="book-cover">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4>Reiki Energy Healing</h4>
+                    <p>Complete Reiki guide</p>
+                </div>
+                <div class="book-item">
+                    <div class="book-cover">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4>Subconscious Mind Mastery</h4>
+                    <p>Reprogramming techniques</p>
+                </div>
+                <div class="book-item">
+                    <div class="book-cover">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4>Holistic Healing Practices</h4>
+                    <p>Ancient wisdom meets modern</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Our Healing Center</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Welcome to our Holistic Healing Center, where we combine ancient wisdom with modern healing techniques 
+                        to provide comprehensive spiritual and emotional wellness services. Our experienced practitioners are 
+                        dedicated to helping you achieve balance and harmony in all aspects of your life.
+                    </p>
+                    <p>
+                        We believe in treating the whole person - mind, body, and spirit. Our approach integrates various 
+                        healing modalities to address your unique needs and support your personal growth journey.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>1000+</h3>
+                        <p>Healing Sessions</p>
+                    </div>
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Healing Services</h2>
+            <div class="services-grid">
+                <a href="services/tarot.html" class="service-card service-tarot">
+                    <div class="service-icon">
+                        <i class="fas fa-cards-blank"></i>
+                    </div>
+                    <h3>Tarot Card Reading & Teaching</h3>
+                    <p>Professional tarot card readings for guidance and insight. Learn to read tarot cards through personalized teaching sessions.</p>
+                </a>
+                <a href="services/counselling.html" class="service-card service-counselling">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Counselling & Guidance</h3>
+                    <p>Professional counselling services to help you navigate life's challenges and find clarity in your decisions.</p>
+                </a>
+                <a href="services/plr.html" class="service-card service-plr">
+                    <div class="service-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>Past Life Regression (PLR)</h3>
+                    <p>Explore your past lives through guided regression therapy to understand current life patterns and heal past traumas.</p>
+                </a>
+                <a href="services/reiki.html" class="service-card service-reiki">
+                    <div class="service-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>Reiki Healing & Coaching</h3>
+                    <p>Energy healing sessions using Reiki techniques to balance your chakras and promote physical and emotional healing.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Pratima's tarot readings have given me incredible clarity during difficult times. Her insights helped me make important life decisions with confidence."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Tarot Client</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The counselling sessions helped me overcome years of anxiety and depression. I finally feel like myself again and have tools to maintain my mental health."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <span>Counselling Client</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Past Life Regression was a life-changing experience. I discovered the root cause of my phobias and was able to release them completely. I feel free now."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Emma Rodriguez</h4>
+                            <span>PLR Client</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Reiki healing sessions have transformed my chronic pain and stress levels. I feel more balanced and energized after each session. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>David Thompson</h4>
+                            <span>Reiki Client</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The subconscious reprogramming helped me break free from limiting beliefs that were holding me back. I've achieved more in the last 6 months than in years."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Lisa Park</h4>
+                            <span>Hypnoheal Client</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Pratima's holistic approach combines multiple healing modalities perfectly. She truly cares about her clients' well-being and creates a safe, nurturing environment."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Jennifer Williams</h4>
+                            <span>Multiple Services</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>healing@holisticcenter.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Healing Street<br>Wellness City, WC 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Sat: 9AM-7PM<br>Sunday: 10AM-5PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select Service</option>
+                            <option value="tarot">Tarot Reading & Teaching</option>
+                            <option value="counselling">Counselling & Guidance</option>
+                            <option value="plr">Past Life Regression</option>
+                            <option value="reiki">Reiki Healing & Coaching</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Holistic Healing Center</h3>
+                    <p>Transforming lives through comprehensive healing and spiritual guidance.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services/tarot.html">Tarot Reading</a></li>
+                        <li><a href="services/counselling.html">Counselling</a></li>
+                        <li><a href="services/plr.html">Past Life Regression</a></li>
+                        <li><a href="services/reiki.html">Reiki Healing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Holistic Healing Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-button" onclick="toggleChat()">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-popup" id="chatPopup">
+            <div class="chat-header">
+                <h4>Chat with us</h4>
+                <button onclick="toggleChat()" class="close-chat">×</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    <p>Hello! How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message..." id="chatInput">
+                <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="booking-modal" id="bookingModal">
+        <div class="booking-modal-content">
+            <div class="booking-modal-header">
+                <h3>Book Your Appointment</h3>
+                <button onclick="closeBookingModal()" class="close-modal">×</button>
+            </div>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age *</label>
+                    <input type="number" id="age" name="age" min="1" max="120" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email ID *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile No. *</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+                <div class="form-group">
+                    <label for="problem">A Brief About Problem *</label>
+                    <textarea id="problem" name="problem" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="service">Preferred Service</label>
+                    <select id="service" name="service">
+                        <option value="">Select a service</option>
+                        <option value="tarot">Tarot Card Reading & Teaching</option>
+                        <option value="counselling">Counselling & Guidance</option>
+                        <option value="plr">Past Life Regression (PLR)</option>
+                        <option value="reiki">Reiki Healing & Coaching</option>
+                    </select>
+                </div>
+                <div class="booking-form-buttons">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" onclick="closeBookingModal()" class="btn btn-secondary">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Thank You Modal -->
+    <div class="thank-you-modal" id="thankYouModal">
+        <div class="thank-you-content">
+            <div class="thank-you-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Thank You!</h3>
+            <p>Your appointment request has been submitted successfully. We'll contact you within 24 hours to confirm your appointment.</p>
+            <button onclick="closeThankYouModal()" class="btn btn-primary">Close</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

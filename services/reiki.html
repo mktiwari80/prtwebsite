@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reiki Healing & Coaching - Holistic Healing Center</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="../index.html" style="color: #8b5cf6; text-decoration: none;">Holistic Healing</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero -->
+    <section class="service-hero reiki-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Reiki Healing & Coaching</h1>
+                <p>Energy healing sessions using Reiki techniques to balance your chakras and promote physical and emotional healing</p>
+                <div class="service-hero-buttons">
+                    <button class="btn btn-primary" onclick="openBookingModal()">Book a Session</button>
+                    <button class="btn btn-secondary" onclick="toggleChat()">Chat Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="service-details">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-intro">
+                    <h2>What is Reiki Healing?</h2>
+                    <p>Reiki is a gentle yet powerful form of energy healing that originated in Japan. The word "Reiki" combines "Rei" (universal life force) and "Ki" (energy) to mean "universal life force energy." This healing modality works by channeling universal energy through the practitioner's hands to promote healing, balance, and well-being.</p>
+                    
+                    <p>During a Reiki session, you remain fully clothed while the practitioner places their hands lightly on or near your body, allowing the healing energy to flow where it's needed most. This natural healing energy works on physical, emotional, mental, and spiritual levels to restore balance and promote optimal health.</p>
+                </div>
+
+                <div class="service-benefits">
+                    <h2>Benefits of Reiki Healing</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <i class="fas fa-leaf"></i>
+                            <h3>Stress Reduction</h3>
+                            <p>Deep relaxation and stress relief through gentle energy balancing</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-heartbeat"></i>
+                            <h3>Physical Healing</h3>
+                            <p>Support natural healing processes and reduce pain and inflammation</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-balance-scale"></i>
+                            <h3>Chakra Balancing</h3>
+                            <p>Balance your energy centers for optimal physical and emotional health</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-sun"></i>
+                            <h3>Spiritual Growth</h3>
+                            <p>Enhance spiritual awareness and deepen your connection to universal energy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-types">
+                    <h2>Our Reiki Services</h2>
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <h3>Traditional Reiki Sessions</h3>
+                            <p>Full-body Reiki healing sessions that address physical, emotional, and spiritual imbalances. Each session is tailored to your specific needs and energy patterns.</p>
+                            <ul>
+                                <li>60-minute full body session</li>
+                                <li>90-minute comprehensive healing</li>
+                                <li>Distance Reiki healing</li>
+                                <li>Chakra-specific treatments</li>
+                            </ul>
+                        </div>
+                        <div class="type-card">
+                            <h3>Reiki Coaching & Training</h3>
+                            <p>Learn to practice Reiki yourself through structured training programs. Become certified in Reiki healing and develop your own healing abilities.</p>
+                            <ul>
+                                <li>Reiki Level 1 certification</li>
+                                <li>Reiki Level 2 practitioner training</li>
+                                <li>Advanced Reiki techniques</li>
+                                <li>Self-healing practices</li>
+                            </ul>
+                        </div>
+                        <div class="type-card">
+                            <h3>Specialized Reiki Treatments</h3>
+                            <p>Targeted Reiki sessions for specific conditions, emotional healing, or spiritual development needs.</p>
+                            <ul>
+                                <li>Pain management and relief</li>
+                                <li>Emotional trauma healing</li>
+                                <li>Spiritual development</li>
+                                <li>Energy clearing and protection</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-process">
+                    <h2>What to Expect</h2>
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Initial Consultation</h3>
+                            <p>We discuss your health concerns, goals, and what you hope to achieve through Reiki healing.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Energy Assessment</h3>
+                            <p>I assess your energy field and chakra system to identify areas needing attention and balance.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Reiki Treatment</h3>
+                            <p>Gentle hands-on or hands-off energy healing that flows to where it's needed most in your body.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>Integration & Guidance</h3>
+                            <p>We discuss the session experience and provide guidance for continued healing and self-care.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-faq">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <h3>What does Reiki feel like?</h3>
+                            <p>Most people experience deep relaxation and a sense of peace during Reiki. You may feel warmth, tingling, or gentle energy flowing through your body. Some people feel nothing physically but experience emotional release or mental clarity.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>How many Reiki sessions do I need?</h3>
+                            <p>The number of sessions varies depending on your goals and current state. Some people feel significant benefits after just one session, while others benefit from a series of sessions for deeper healing. We'll discuss your needs during the initial consultation.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Can Reiki be done remotely?</h3>
+                            <p>Yes! Distance Reiki is just as effective as in-person sessions. Energy is not limited by physical distance, and many clients experience profound healing through remote sessions.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Is Reiki safe for everyone?</h3>
+                            <p>Reiki is completely safe for people of all ages and health conditions. It's gentle, non-invasive, and works in harmony with your body's natural healing processes. It can be used alongside conventional medical treatments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="service-cta">
+        <div class="container">
+            <h2>Ready to Experience Reiki Healing?</h2>
+            <p>Discover the gentle yet powerful healing energy of Reiki and restore balance to your mind, body, and spirit.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="openBookingModal()">Book a Session</button>
+                <button class="btn btn-secondary" onclick="toggleChat()">Chat Now</button>
+                <a href="../index.html#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Holistic Healing Center</h3>
+                    <p>Transforming lives through comprehensive healing and spiritual guidance.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html#home">Home</a></li>
+                        <li><a href="../index.html#books">Books</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="tarot.html">Tarot Reading</a></li>
+                        <li><a href="counselling.html">Counselling</a></li>
+                        <li><a href="plr.html">Past Life Regression</a></li>
+                        <li><a href="hypnoheal.html">Hypnoheal</a></li>
+                        <li><a href="reiki.html">Reiki Healing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Holistic Healing Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header" onclick="toggleChat()">
+            <i class="fas fa-comments"></i>
+            <span>Chat with us</span>
+            <i class="fas fa-chevron-down" id="chatToggle"></i>
+        </div>
+        <div class="chat-popup" id="chatPopup">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <p>Hello! How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="booking-modal" id="bookingModal">
+        <div class="booking-modal-content">
+            <div class="booking-modal-header">
+                <h2>Book Your Session</h2>
+                <span class="close-modal" onclick="closeBookingModal()">&times;</span>
+            </div>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age *</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email ID *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile No. *</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Preferred Service</label>
+                    <select id="service" name="service">
+                        <option value="">Select a service</option>
+                        <option value="Tarot Reading">Tarot Reading</option>
+                        <option value="Counselling">Counselling</option>
+                        <option value="Past Life Regression">Past Life Regression</option>
+                        <option value="Reiki Healing">Reiki Healing</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="problem">A Brief About Problem</label>
+                    <textarea id="problem" name="problem" rows="4" placeholder="Please describe your concern or what you'd like to work on..."></textarea>
+                </div>
+                <div class="booking-form-buttons">
+                    <button type="button" class="btn btn-outline" onclick="closeBookingModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Thank You Modal -->
+    <div class="thank-you-modal" id="thankYouModal">
+        <div class="thank-you-content">
+            <div class="thank-you-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Thank You!</h3>
+            <p>Your appointment request has been submitted successfully. We'll contact you within 24 hours to confirm your appointment.</p>
+            <button class="btn btn-primary" onclick="closeThankYouModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html> 

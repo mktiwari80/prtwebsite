@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counselling & Guidance - Holistic Healing Center</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="../index.html" style="color: #8b5cf6; text-decoration: none;">Holistic Healing</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero -->
+    <section class="service-hero counselling-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Counselling & Guidance</h1>
+                <p>Professional counselling services to help you navigate life's challenges and find clarity in your decisions</p>
+                <div class="service-hero-buttons">
+                    <button class="btn btn-primary" onclick="openBookingModal()">Book a Session</button>
+                    <button class="btn btn-secondary" onclick="toggleChat()">Chat Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="service-details">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-intro">
+                    <h2>What is Professional Counselling?</h2>
+                    <p>Counselling is a collaborative process between a trained professional and an individual seeking support for personal, emotional, or psychological challenges. It provides a safe, confidential space where you can explore your thoughts, feelings, and experiences with the guidance of a skilled practitioner.</p>
+                    
+                    <p>Our counselling approach integrates traditional therapeutic techniques with holistic healing principles, addressing the whole person - mind, body, and spirit. We believe that true healing comes from understanding the root causes of your challenges and developing practical strategies for positive change.</p>
+                </div>
+
+                <div class="service-benefits">
+                    <h2>Benefits of Professional Counselling</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <i class="fas fa-brain"></i>
+                            <h3>Mental Clarity</h3>
+                            <p>Gain clarity on confusing thoughts and emotions, helping you understand yourself better</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-balance-scale"></i>
+                            <h3>Emotional Balance</h3>
+                            <p>Learn to manage emotions effectively and develop healthy coping mechanisms</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-users"></i>
+                            <h3>Better Relationships</h3>
+                            <p>Improve communication skills and build healthier relationships with others</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-target"></i>
+                            <h3>Goal Achievement</h3>
+                            <p>Set and achieve personal goals with structured guidance and support</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-types">
+                    <h2>Our Counselling Services</h2>
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <h3>Individual Counselling</h3>
+                            <p>One-on-one sessions focused on your personal challenges, goals, and growth. We work together to identify patterns, develop insights, and create positive change in your life.</p>
+                            <ul>
+                                <li>Personal development and growth</li>
+                                <li>Stress and anxiety management</li>
+                                <li>Depression and mood disorders</li>
+                                <li>Self-esteem and confidence building</li>
+                            </ul>
+                        </div>
+                        <div class="type-card">
+                            <h3>Life Guidance & Coaching</h3>
+                            <p>Structured guidance to help you navigate life transitions, make important decisions, and achieve your personal and professional goals.</p>
+                            <ul>
+                                <li>Career transitions and decisions</li>
+                                <li>Life purpose and direction</li>
+                                <li>Personal development planning</li>
+                                <li>Goal setting and achievement</li>
+                            </ul>
+                        </div>
+                        <div class="type-card">
+                            <h3>Relationship Counselling</h3>
+                            <p>Support for improving communication, resolving conflicts, and building stronger, healthier relationships with partners, family, and friends.</p>
+                            <ul>
+                                <li>Couples counselling</li>
+                                <li>Family relationship issues</li>
+                                <li>Communication skills</li>
+                                <li>Conflict resolution</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-process">
+                    <h2>What to Expect</h2>
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Initial Assessment</h3>
+                            <p>We begin with a comprehensive assessment to understand your needs, goals, and current challenges.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Goal Setting</h3>
+                            <p>Together, we establish clear, achievable goals for your counselling journey and personal growth.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Active Therapy</h3>
+                            <p>Regular sessions where we work through challenges, develop insights, and practice new skills.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>Progress Review</h3>
+                            <p>Regular check-ins to assess progress, celebrate achievements, and adjust strategies as needed.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-faq">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <h3>How long does counselling typically take?</h3>
+                            <p>The duration varies depending on your goals and needs. Some people benefit from short-term counselling (6-12 sessions), while others prefer longer-term support. We work at your pace and regularly review progress together.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Is counselling confidential?</h3>
+                            <p>Yes, all counselling sessions are strictly confidential. Your privacy and trust are our top priorities. There are only rare legal exceptions to confidentiality that we'll discuss in our first session.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>What if I'm not sure counselling is right for me?</h3>
+                            <p>We offer a free initial consultation to help you determine if counselling is the right choice for you. This session allows us to discuss your concerns and answer any questions you may have.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Can I combine counselling with other healing services?</h3>
+                            <p>Absolutely! Many clients find that combining counselling with other holistic services like Reiki, meditation, or energy healing creates a more comprehensive healing experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="service-cta">
+        <div class="container">
+            <h2>Ready to Begin Your Healing Journey?</h2>
+            <p>Take the first step towards positive change and emotional well-being with professional counselling support.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="openBookingModal()">Book a Session</button>
+                <button class="btn btn-secondary" onclick="toggleChat()">Chat Now</button>
+                <a href="../index.html#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Holistic Healing Center</h3>
+                    <p>Transforming lives through comprehensive healing and spiritual guidance.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html#home">Home</a></li>
+                        <li><a href="../index.html#books">Books</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="tarot.html">Tarot Reading</a></li>
+                        <li><a href="counselling.html">Counselling</a></li>
+                        <li><a href="plr.html">Past Life Regression</a></li>
+                        <li><a href="hypnoheal.html">Hypnoheal</a></li>
+                        <li><a href="reiki.html">Reiki Healing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Holistic Healing Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header" onclick="toggleChat()">
+            <i class="fas fa-comments"></i>
+            <span>Chat with us</span>
+            <i class="fas fa-chevron-down" id="chatToggle"></i>
+        </div>
+        <div class="chat-popup" id="chatPopup">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <p>Hello! How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="booking-modal" id="bookingModal">
+        <div class="booking-modal-content">
+            <div class="booking-modal-header">
+                <h2>Book Your Session</h2>
+                <span class="close-modal" onclick="closeBookingModal()">&times;</span>
+            </div>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age *</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email ID *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile No. *</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Preferred Service</label>
+                    <select id="service" name="service">
+                        <option value="">Select a service</option>
+                        <option value="Tarot Reading">Tarot Reading</option>
+                        <option value="Counselling">Counselling</option>
+                        <option value="Past Life Regression">Past Life Regression</option>
+                        <option value="Reiki Healing">Reiki Healing</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="problem">A Brief About Problem</label>
+                    <textarea id="problem" name="problem" rows="4" placeholder="Please describe your concern or what you'd like to work on..."></textarea>
+                </div>
+                <div class="booking-form-buttons">
+                    <button type="button" class="btn btn-outline" onclick="closeBookingModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Thank You Modal -->
+    <div class="thank-you-modal" id="thankYouModal">
+        <div class="thank-you-content">
+            <div class="thank-you-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Thank You!</h3>
+            <p>Your appointment request has been submitted successfully. We'll contact you within 24 hours to confirm your appointment.</p>
+            <button class="btn btn-primary" onclick="closeThankYouModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html> 

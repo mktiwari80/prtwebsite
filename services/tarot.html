@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Card Reading & Teaching - Holistic Healing Center</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="../index.html" style="color: #8b5cf6; text-decoration: none;">Holistic Healing</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero -->
+    <section class="service-hero tarot-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Tarot Card Reading & Teaching</h1>
+                <p>Discover the ancient wisdom of tarot cards for guidance, insight, and spiritual growth</p>
+                <div class="service-hero-buttons">
+                    <button class="btn btn-primary" onclick="openBookingModal()">Book a Session</button>
+                    <button class="btn btn-secondary" onclick="toggleChat()">Chat Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="service-details">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-intro">
+                    <h2>What is Tarot Reading?</h2>
+                    <p>Tarot reading is an ancient divination practice that uses a deck of 78 cards to provide guidance, insight, and spiritual wisdom. Each card carries symbolic meanings that, when interpreted by an experienced reader, can offer profound insights into your life's journey, relationships, career, and personal growth.</p>
+                    
+                    <p>Our tarot sessions are conducted in a sacred, supportive environment where you can explore your questions and receive guidance for your path forward. Whether you're seeking clarity on a specific situation or general life guidance, tarot can provide the wisdom you need.</p>
+                </div>
+
+                <div class="service-benefits">
+                    <h2>Benefits of Tarot Reading</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <h3>Clarity & Insight</h3>
+                            <p>Gain clarity on confusing situations and receive insights into your life's direction</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-heart"></i>
+                            <h3>Emotional Healing</h3>
+                            <p>Process emotions and find healing through guided reflection and understanding</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-compass"></i>
+                            <h3>Life Direction</h3>
+                            <p>Discover your true path and make informed decisions about your future</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-eye"></i>
+                            <h3>Self-Discovery</h3>
+                            <p>Deepen your understanding of yourself and your relationships</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-types">
+                    <h2>Our Tarot Services</h2>
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <h3>Personal Reading Sessions</h3>
+                            <p>One-on-one tarot readings tailored to your specific questions and concerns. Sessions include card interpretation, guidance, and practical advice for your situation.</p>
+                            <ul>
+                                <li>30-minute focused reading</li>
+                                <li>60-minute comprehensive reading</li>
+                                <li>90-minute deep dive session</li>
+                            </ul>
+                        </div>
+                        <div class="type-card">
+                            <h3>Tarot Teaching & Learning</h3>
+                            <p>Learn to read tarot cards yourself through personalized teaching sessions. Master card meanings, spreads, and intuitive reading techniques.</p>
+                            <ul>
+                                <li>Beginner tarot courses</li>
+                                <li>Advanced interpretation techniques</li>
+                                <li>Intuitive reading development</li>
+                            </ul>
+                        </div>
+                        <div class="type-card">
+                            <h3>Specialized Readings</h3>
+                            <p>Specialized tarot sessions for specific areas of life including love, career, spiritual growth, and personal development.</p>
+                            <ul>
+                                <li>Love and relationship readings</li>
+                                <li>Career and life purpose guidance</li>
+                                <li>Spiritual growth and development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-process">
+                    <h2>What to Expect</h2>
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Initial Consultation</h3>
+                            <p>We begin with a brief discussion about your questions and what you hope to gain from the reading.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Card Selection</h3>
+                            <p>You'll be guided through selecting cards that resonate with your energy and questions.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Interpretation & Guidance</h3>
+                            <p>I'll interpret the cards and provide guidance, insights, and practical advice for your situation.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>Integration & Follow-up</h3>
+                            <p>We'll discuss how to integrate the insights into your daily life and plan any follow-up sessions if needed.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-faq">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <h3>How accurate are tarot readings?</h3>
+                            <p>Tarot readings provide guidance and insights based on the energy and circumstances present at the time of the reading. The accuracy depends on your openness and the reader's skill. Think of it as a spiritual GPS - it shows you the path, but you choose how to walk it.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Can tarot predict the future?</h3>
+                            <p>Tarot doesn't predict a fixed future, but rather shows potential outcomes based on current energies and choices. It's a tool for guidance that helps you make informed decisions about your path forward.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>How long does a typical session last?</h3>
+                            <p>Reading sessions typically last 30-90 minutes depending on the type of reading and your needs. Teaching sessions can be 60-120 minutes to allow for practice and learning.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Do I need to bring anything to the session?</h3>
+                            <p>Just bring an open mind and your questions. I provide all the tarot decks and materials needed for the session. You may want to bring a notebook to record insights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="service-cta">
+        <div class="container">
+            <h2>Ready to Begin Your Tarot Journey?</h2>
+            <p>Book your session today and discover the wisdom and guidance that tarot can bring to your life.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="openBookingModal()">Book a Session</button>
+                <button class="btn btn-secondary" onclick="toggleChat()">Chat Now</button>
+                <a href="../index.html#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Holistic Healing Center</h3>
+                    <p>Transforming lives through comprehensive healing and spiritual guidance.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html#home">Home</a></li>
+                        <li><a href="../index.html#books">Books</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="tarot.html">Tarot Reading</a></li>
+                        <li><a href="counselling.html">Counselling</a></li>
+                        <li><a href="plr.html">Past Life Regression</a></li>
+                        <li><a href="hypnoheal.html">Hypnoheal</a></li>
+                        <li><a href="reiki.html">Reiki Healing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Holistic Healing Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header" onclick="toggleChat()">
+            <i class="fas fa-comments"></i>
+            <span>Chat with us</span>
+            <i class="fas fa-chevron-down" id="chatToggle"></i>
+        </div>
+        <div class="chat-popup" id="chatPopup">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <p>Hello! How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="booking-modal" id="bookingModal">
+        <div class="booking-modal-content">
+            <div class="booking-modal-header">
+                <h2>Book Your Session</h2>
+                <span class="close-modal" onclick="closeBookingModal()">&times;</span>
+            </div>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age *</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email ID *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile No. *</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Preferred Service</label>
+                    <select id="service" name="service">
+                        <option value="">Select a service</option>
+                        <option value="Tarot Reading">Tarot Reading</option>
+                        <option value="Counselling">Counselling</option>
+                        <option value="Past Life Regression">Past Life Regression</option>
+                        <option value="Reiki Healing">Reiki Healing</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="problem">A Brief About Problem</label>
+                    <textarea id="problem" name="problem" rows="4" placeholder="Please describe your concern or what you'd like to work on..."></textarea>
+                </div>
+                <div class="booking-form-buttons">
+                    <button type="button" class="btn btn-outline" onclick="closeBookingModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Thank You Modal -->
+    <div class="thank-you-modal" id="thankYouModal">
+        <div class="thank-you-content">
+            <div class="thank-you-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Thank You!</h3>
+            <p>Your appointment request has been submitted successfully. We'll contact you within 24 hours to confirm your appointment.</p>
+            <button class="btn btn-primary" onclick="closeThankYouModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html> 
